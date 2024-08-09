@@ -28,21 +28,12 @@
 
     .second-banner {
         position: relative;
-
-        img {
-            height: 30rem;
-            object-fit: cover;
-        }
-
-        .second-banner-grid-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            h2 {
-                color: white;
-            }
-
-            
+        
+        a{
+            img {
+                height: 30rem;
+                object-fit: cover;
+            } 
         }
     }
 

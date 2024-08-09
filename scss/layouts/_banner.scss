@@ -20,31 +20,47 @@
 
         
     }
-    .child{
-        overflow: hidden;
-        position: relative;
-        .grid-content{
-            position: absolute;
-            left: 2rem;
-            bottom: 2rem;
-            color: white;
-            padding-right: 1rem;
-            a{
-                h2{
-                    font-family: $main-font;
-                    margin-top: 10px;
-                    text-wrap: wrap;
+   
     
-                }
-            }
-            
-            p{
-                font-family: $secondary-font;
-                font-size: 12px;
+.child {
+    overflow: hidden;
+    position: relative;
+
+    .grid-content {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        color: white;
+        padding-right: 1rem;
+
+        a {
+            h2 {
+                font-family: $main-font;
                 margin-top: 10px;
                 text-wrap: wrap;
+
             }
         }
+
+        .banner-btn {
+            background-color: $pink-color;
+            border: none;
+            width: fit-content;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 2px;
+            color: white;
+            font-weight: 600;
+            
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-size: 12px;
+            margin-top: 10px;
+            text-wrap: wrap;
+        }
     }
+}
     
 }

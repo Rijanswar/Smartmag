@@ -60,18 +60,6 @@ ul li {
   font-size: 14px;
 }
 
-.banner-btn {
-  background-color: #FF007A;
-  border: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 12px;
-  padding: 5px;
-  border-radius: 2px;
-  color: white;
-  font-weight: 600;
-}
-
 header {
   color: white;
 }
@@ -283,6 +271,17 @@ header .navigation-bar .right-navigation a i:hover {
   margin-top: 10px;
   text-wrap: wrap;
 }
+.grid .child .grid-content .banner-btn {
+  background-color: #FF007A;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+}
 .grid .child .grid-content p {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -316,18 +315,10 @@ header .navigation-bar .right-navigation a i:hover {
 .container .second-banner {
   position: relative;
 }
-.container .second-banner img {
+.container .second-banner a img {
   height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.container .second-banner .second-banner-grid-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.container .second-banner .second-banner-grid-content h2 {
-  color: white;
 }
 .container .aside {
   width: 100%;
