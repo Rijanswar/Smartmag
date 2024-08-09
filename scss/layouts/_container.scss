@@ -1,69 +1,104 @@
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
     padding-top: 5rem;
-    h2{
+
+    h2 {
         @include font($font-family: $main-font, $color: $pink-color, $font-size: 24px);
         margin-bottom: 25px;
     }
-    .gird-col-3{
+
+    .gird-col-3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
-    .container-banner{
+
+    .container-banner {
         margin: 50px 0;
         width: 100%;
-        a{
-            img{
+
+        a {
+            img {
                 width: 100%;
             }
         }
-        
+
     }
 
-    .aside{
+    .second-banner {
+        position: relative;
+
+        img {
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        .second-banner-grid-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            h2 {
+                color: white;
+            }
+
+            
+        }
+    }
+
+    .aside {
         width: 100%;
-        .left-aside{
+
+        .left-aside {
             width: 70%;
-            .card-column{
+
+            .card-column {
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 20px;
                 margin-bottom: 25px;
-                img{
+
+                img {
                     width: 40%;
                     height: 10rem;
                     object-fit: cover;
                     flex-shrink: 0;
                 }
-                .card-details{
-                    h3{
+
+                .card-details {
+                    h3 {
                         @include font($font-family: $main-font, $color: $pink-color)
                     }
-                    .heading{
+
+                    .heading {
                         width: 100%;
                         text-wrap: wrap;
                         font-size: 24px;
                         line-height: 30px;
                         transition: 0.3s;
-                        &:hover{
+
+                        &:hover {
                             color: $pink-color;
                             cursor: pointer;
                         }
                     }
-                    .card-date{
+
+                    .card-date {
                         font-size: 14px;
-                        a{
+
+                        a {
                             color: black;
                         }
-                        span{
+
+                        span {
                             margin-left: 1rem;
-                            a{
+
+                            a {
                                 color: gray;
-                                i{
+
+                                i {
                                     margin-right: 5px;
                                 }
 
@@ -76,4 +111,3 @@
         }
     }
 }
-

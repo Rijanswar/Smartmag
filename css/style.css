@@ -60,6 +60,18 @@ ul li {
   font-size: 14px;
 }
 
+.banner-btn {
+  background-color: #FF007A;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+}
+
 header {
   color: white;
 }
@@ -266,17 +278,6 @@ header .navigation-bar .right-navigation a i:hover {
   color: white;
   padding-right: 1rem;
 }
-.grid .child .grid-content button {
-  background-color: #FF007A;
-  border: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 12px;
-  padding: 5px;
-  border-radius: 2px;
-  color: white;
-  font-weight: 600;
-}
 .grid .child .grid-content a h2 {
   font-family: "Saira Semi Condensed", sans-serif;
   margin-top: 10px;
@@ -311,6 +312,22 @@ header .navigation-bar .right-navigation a i:hover {
 }
 .container .container-banner a img {
   width: 100%;
+}
+.container .second-banner {
+  position: relative;
+}
+.container .second-banner img {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .second-banner .second-banner-grid-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container .second-banner .second-banner-grid-content h2 {
+  color: white;
 }
 .container .aside {
   width: 100%;
