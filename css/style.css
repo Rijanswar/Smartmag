@@ -465,4 +465,65 @@ header .navigation-bar .right-navigation a i:hover {
 .load-more button:hover {
   background-color: black;
   color: white;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: black;
+  padding: 2rem 0;
+}
+footer .container .center {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container .center img {
+  width: 10rem;
+}
+footer .container .center .footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .container .center .footer-social .round {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #1D1D1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+footer .container .center .footer-links {
+  margin: 30px 0;
+}
+footer .container .center .footer-links ul li {
+  margin-left: 20px;
+}
+footer .container .center .footer-links ul li:first-child {
+  margin-left: 0;
+}
+footer .container .center .footer-links ul li a {
+  color: white;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+footer .container .center .footer-links ul li a:hover {
+  color: rgb(205, 205, 205);
+}
+footer .container .center p {
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Saira Semi Condensed", sans-serif;
+  color: gray;
+}
+footer .container .center p a {
+  color: rgba(255, 255, 255, 0.818);
 }/*# sourceMappingURL=style.css.map */

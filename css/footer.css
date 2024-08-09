@@ -1,0 +1,8 @@
+footer {
+  background-color: black;
+}
+footer .container .center .footer-social .round {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}/*# sourceMappingURL=footer.css.map */
