@@ -319,6 +319,34 @@ header .navigation-bar .right-navigation a i:hover {
   height: 30rem;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(0.8);
+}
+.container .second-banner .grid-content {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: white;
+}
+.container .second-banner .grid-content h2 {
+  color: white;
+  margin-bottom: 0;
+}
+.container .second-banner .grid-content .banner-btn {
+  background-color: #FF007A;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+}
+.container .second-banner .grid-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  text-wrap: wrap;
 }
 .container .aside {
   width: 100%;
