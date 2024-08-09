@@ -60,6 +60,12 @@ ul li {
   font-size: 14px;
 }
 
+.gird-col-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
 header {
   color: white;
 }
@@ -292,13 +298,13 @@ header .navigation-bar .right-navigation a i:hover {
 .container {
   width: 1100px;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 .container h2 {
   font-family: "Saira Semi Condensed", sans-serif;
   font-size: 24px;
   color: #FF007A;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .container .gird-col-3 {
   display: grid;
@@ -420,4 +426,43 @@ header .navigation-bar .right-navigation a i:hover {
 .container .aside .right-aside .sticky {
   position: sticky;
   top: 0;
+}
+
+.gadget {
+  background-color: #F4F4F4;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.aside-banner {
+  width: 20rem;
+}
+
+.sticky-10 {
+  position: sticky;
+  top: 10px;
+}
+
+.load-more {
+  width: 40%;
+  margin: 0 auto;
+}
+.load-more button {
+  background-color: white;
+  width: 100%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.837);
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.load-more button:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
