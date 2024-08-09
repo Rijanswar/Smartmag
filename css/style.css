@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+
+.card {
+  width: 12rem;
+}
+.card img {
+  width: 12rem;
+  height: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+.card img:hover {
+  filter: brightness(0.8);
+}
+.card p {
+  font-family: "Saira Semi Condensed";
+  font-weight: 600;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.8235294118);
+}
+.card .card-date {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+}
+
+.card-width {
+  width: 100%;
+}
+.card-width img {
+  width: 100%;
+  height: 13rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-width p {
+  font-size: 20px;
+  line-height: 25px;
+}
+.card-width .card-date {
+  font-size: 14px;
+}
+
+header {
+  color: white;
+}
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 8px 25px;
+}
+header .top-header .left-links a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+header .top-header .left-links a:hover {
+  color: #FF007A;
+}
+header .top-header .right-links a {
+  margin-right: 15px;
+}
+header .top-header .right-links a:hover {
+  color: rgba(255, 255, 255, 0.908);
+}
+header .navigation-bar {
+  box-shadow: 0 0px 5px rgba(108, 108, 108, 0.266);
+  color: black;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .navigation-bar .left-navigation {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+header .navigation-bar .left-navigation nav {
+  display: inline-block;
+}
+header .navigation-bar .left-navigation nav ul li {
+  padding: 30px 0px;
+  cursor: pointer;
+  position: relative;
+}
+header .navigation-bar .left-navigation nav ul li:hover a {
+  color: #FF007A;
+}
+header .navigation-bar .left-navigation nav ul li:hover .submenu {
+  display: flex;
+  flex-direction: column;
+}
+header .navigation-bar .left-navigation nav ul li:hover .M-submenu {
+  display: flex;
+}
+header .navigation-bar .left-navigation nav ul li a {
+  margin-right: 20px;
+  color: #000000;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+header .navigation-bar .left-navigation nav ul li a i {
+  color: #FF007A;
+  font-size: 14px;
+}
+header .navigation-bar .left-navigation nav ul li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 11111;
+  left: 0;
+  border: 1px solid rgba(190, 188, 188, 0.504);
+  border-top: none;
+  width: 15rem;
+  background-color: white;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li {
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid rgba(215, 215, 215, 0.725);
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li:hover a {
+  color: #FF007A;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li a {
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li i {
+  color: #FF007A;
+  font-size: 10px;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li:hover .submenu2 {
+  display: flex;
+  flex-direction: column;
+  color: #FF007A;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li .submenu2 {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: 0%;
+  background-color: white;
+  border: 1px solid rgba(190, 188, 188, 0.504);
+  border-top: none;
+  width: 15rem;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li .submenu2 li:hover a {
+  color: #FF007A;
+}
+header .navigation-bar .left-navigation nav ul li .submenu li .submenu2 li a {
+  color: #000000;
+}
+header .navigation-bar .left-navigation nav ul li .M-submenu {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(128, 128, 128, 0.421);
+  display: none;
+  gap: 20px;
+  position: absolute;
+  z-index: 11111;
+  top: 100%;
+  border-top: 1px solid rgba(171, 171, 171, 0.457);
+  background-color: white;
+  left: -24rem;
+  border-radius: 0 0 2px 2px;
+}
+header .navigation-bar .left-navigation nav ul li .H-submenu {
+  position: absolute;
+  top: 100%;
+  left: -12rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  background-color: yellow;
+  border-top: none;
+}
+header .navigation-bar .left-navigation nav ul li .H-submenu .M-submenu .left-devices {
+  width: 12rem;
+  border-right: 1px solid rgba(180, 178, 178, 0.591);
+}
+header .navigation-bar .left-navigation nav ul li .H-submenu .M-submenu .left-devices ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+header .navigation-bar .left-navigation nav ul li .H-submenu .M-submenu .left-devices ul li {
+  padding: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(180, 178, 178, 0.591);
+}
+header .navigation-bar .left-navigation nav ul li .H-submenu .M-submenu .left-devices ul li a {
+  color: #000000;
+  font-weight: normal;
+  font-size: 14px;
+}
+header .navigation-bar .right-navigation {
+  display: flex;
+  gap: 20px;
+}
+header .navigation-bar .right-navigation a i {
+  font-weight: 600;
+  transition: 0.3s;
+}
+header .navigation-bar .right-navigation a i:hover {
+  color: #FF007A;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  gap: 3px;
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.grid img:hover {
+  transform: scale(1.1);
+}
+.grid .row2 {
+  grid-row: span 2;
+}
+.grid .child {
+  overflow: hidden;
+  position: relative;
+}
+.grid .child .grid-content {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: white;
+  padding-right: 1rem;
+}
+.grid .child .grid-content button {
+  background-color: #FF007A;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 600;
+}
+.grid .child .grid-content a h2 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  margin-top: 10px;
+  text-wrap: wrap;
+}
+.grid .child .grid-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  margin-top: 10px;
+  text-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.container h2 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 24px;
+  color: #FF007A;
+  margin-bottom: 25px;
+}
+.container .gird-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.container .container-banner {
+  margin: 50px 0;
+  width: 100%;
+}
+.container .container-banner a img {
+  width: 100%;
+}
+.container .aside {
+  width: 100%;
+}
+.container .aside .left-aside {
+  width: 70%;
+}
+.container .aside .left-aside .card-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.container .aside .left-aside .card-column img {
+  width: 40%;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+.container .aside .left-aside .card-column .card-details h3 {
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 16px;
+  color: #FF007A;
+}
+.container .aside .left-aside .card-column .card-details .heading {
+  width: 100%;
+  text-wrap: wrap;
+  font-size: 24px;
+  line-height: 30px;
+  transition: 0.3s;
+}
+.container .aside .left-aside .card-column .card-details .heading:hover {
+  color: #FF007A;
+  cursor: pointer;
+}
+.container .aside .left-aside .card-column .card-details .card-date {
+  font-size: 14px;
+}
+.container .aside .left-aside .card-column .card-details .card-date a {
+  color: black;
+}
+.container .aside .left-aside .card-column .card-details .card-date span {
+  margin-left: 1rem;
+}
+.container .aside .left-aside .card-column .card-details .card-date span a {
+  color: gray;
+}
+.container .aside .left-aside .card-column .card-details .card-date span a i {
+  margin-right: 5px;
+}/*# sourceMappingURL=style.css.map */

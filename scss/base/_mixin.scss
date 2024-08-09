@@ -1,0 +1,13 @@
+@mixin line-clamp() {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin font($font-family: "sans-serif", $font-size: 16px, $color: black,){
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+
+}

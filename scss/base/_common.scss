@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+    }
+}
+
+.card {
+    width: 12rem;
+
+    img {
+        width: 12rem;
+        height: 8rem;
+        object-fit: cover;
+        transition: 0.3s;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+
+    p {
+        font-family: "Saira Semi Condensed";
+        font-weight: 600;
+        line-height: 18px;
+        color: #000000d2;
+    }
+
+    .card-date {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        color: gray;
+    }
+
+}
+
+.card-width{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 13rem;
+        object-fit: cover;
+    }
+    p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .card-date{
+        font-size: 14px;
+    }
+}
+
+$main-font: "Saira Semi Condensed", sans-serif;
+$secondary-font: "Inter", sans-serif;
+$pink-color: #FF007A;
+$black-color: black;

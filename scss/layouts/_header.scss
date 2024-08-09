@@ -1,0 +1,225 @@
+header {
+    color: white;
+
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $black-color;
+        padding: 8px 25px;
+
+        .left-links {
+            a {
+                font-family: $secondary-font;
+                font-size: 14px;
+                margin-right: 20px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $pink-color;
+                }
+            }
+        }
+
+        .right-links {
+            a {
+                margin-right: 15px;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.908);
+                }
+            }
+        }
+
+    }
+
+    .navigation-bar {
+        box-shadow: 0 0px 5px rgba(108, 108, 108, 0.266);
+        color: $black-color;
+        padding: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-navigation {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            nav {
+                display: inline-block;
+
+                ul {
+                    li {
+                        padding: 30px 0px;
+                        cursor: pointer;
+                        position: relative;
+
+                        &:hover a {
+                            color: $pink-color;
+                        }
+
+                        &:hover .submenu {
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        &:hover .M-submenu {
+                            display: flex;
+                        }
+
+                        a {
+                            margin-right: 20px;
+                            color: #000000;
+                            font-family: $main-font;
+                            font-weight: 600;
+                            transition: 0.3s;
+
+                            i {
+                                color: $pink-color;
+                                font-size: 14px;
+                            }
+
+                        }
+
+                        .submenu {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            z-index: 11111;
+                            left: 0;
+                            // box-shadow: 0 0px 5px rgba(108, 108, 108, 0.266);
+                            border: 1px solid rgba(190, 188, 188, 0.504);
+                            border-top: none;
+                            width: 15rem;
+                            background-color: white;
+
+                            li {
+                                padding: 10px 10px 10px 20px;
+                                border-bottom: 1px solid rgba(215, 215, 215, 0.725);
+                                text-wrap: nowrap;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: relative;
+
+                                &:hover a {
+                                    color: $pink-color;
+                                }
+
+                                a {
+                                    font-size: 14px;
+                                    font-weight: normal;
+                                    color: $black-color;
+                                }
+
+                                i {
+                                    color: $pink-color;
+                                    font-size: 10px;
+                                }
+
+                                &:hover .submenu2 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    color: $pink-color;
+                                }
+
+                                .submenu2 {
+                                    position: absolute;
+                                    display: none;
+                                    left: 100%;
+                                    top: 0%;
+                                    background-color: white;
+                                    border: 1px solid rgba(190, 188, 188, 0.504);
+                                    border-top: none;
+                                    width: 15rem;
+
+                                    li {
+                                        &:hover a {
+                                            color: $pink-color;
+                                        }
+
+                                        a {
+                                            color: #000000;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .M-submenu {
+                            width: fit-content;
+                            padding: 20px;
+                            box-shadow: 0 1px 5px rgba(128, 128, 128, 0.421);
+                            display: none;
+                            gap: 20px;
+                            position: absolute;
+                            z-index: 11111;
+                            top: 100%;
+                            border-top: 1px solid rgba(171, 171, 171, 0.457);
+                            background-color: white;
+                            left: -24rem;
+                            border-radius: 0 0 2px 2px;
+                        }
+
+                        .H-submenu {
+                            position: absolute;
+                            top: 100%;
+                            left: -12rem;
+                            width: fit-content;
+                            display: flex;
+                            background-color: yellow;
+                            border-top: none;
+
+                            .M-submenu {
+                                .left-devices {
+                                    width: 12rem;
+                                    border-right: 1px solid rgba(180, 178, 178, 0.591);
+
+                                    ul {
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 0 20px;
+
+                                        li {
+                                            padding: 0;
+                                            margin-bottom: 15px;
+                                            border-bottom: 1px solid rgba(180, 178, 178, 0.591);
+
+                                            a {
+                                                color: #000000;
+                                                font-weight: normal;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .right-navigation {
+            display: flex;
+            gap: 20px;
+
+            a {
+                i {
+                    font-weight: 600;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $pink-color;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
