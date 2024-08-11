@@ -500,6 +500,9 @@ footer .container .center .footer-social .round {
   font-size: 20px;
   color: white;
 }
+footer .container .center .footer-social .round:hover {
+  background-color: rgba(56, 56, 56, 0.822);
+}
 footer .container .center .footer-links {
   margin: 30px 0;
 }
