@@ -1,8 +1,7 @@
 .grid{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 69% 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: white;
     gap: 3px;
     
     img{
@@ -10,6 +9,7 @@
         height: 100%;
         transition: 0.7s;
         cursor: pointer;
+        object-fit: cover;
         &:hover{
             transform: scale(1.1);
         }

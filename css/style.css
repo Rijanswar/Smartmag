@@ -244,9 +244,8 @@ header .navigation-bar .right-navigation a i:hover {
 
 .grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 69% 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: white;
   gap: 3px;
 }
 .grid img {
@@ -254,6 +253,8 @@ header .navigation-bar .right-navigation a i:hover {
   height: 100%;
   transition: 0.7s;
   cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid img:hover {
   transform: scale(1.1);
@@ -529,4 +530,47 @@ footer .container .center p {
 }
 footer .container .center p a {
   color: rgba(255, 255, 255, 0.818);
+}
+
+@media (max-width: 1300px) {
+  .grid .child .grid-content a h2 {
+    font-size: 18px !important;
+  }
+  .grid .child .grid-content p {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .container .right-aside .sticky-10 {
+    width: 250px;
+  }
+}
+@media (max-width: 1050px) {
+  .navigation-bar .left-navigation nav ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+@media (max-width: 940px) {
+  .top-header {
+    display: none !important;
+  }
+  .navigation-bar .left-navigation nav ul li a {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    width: 720px;
+  }
+  .container .right-aside .sticky-10 {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
