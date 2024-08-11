@@ -16,7 +16,7 @@
                 <div class="grid-content">
                     <button class="banner-btn">GAMING</button>
                     <a href="">
-                        <h2>iPhone Pro 13 Rumored to Feature 1 TB of Storage</h2>
+                        <h2 class="small-text">iPhone Pro 13 Rumored to Feature 1 TB of Storage</h2>
                     </a>
                     <p>Shane Doe - Jan 5, 2021</p>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="grid-content">
                     <button class="banner-btn">GAMING</button>
                     <a href="">
-                        <h2>Fujifilm's 102-Megapixel Camera is the Size of a Typical DSLR</h2>
+                        <h2 class="small-text">Fujifilm's 102-Megapixel Camera is the Size of a Typical DSLR</h2>
                     </a>
                     <p>Shane Doe - Jan 5, 2021</p>
                 </div>
